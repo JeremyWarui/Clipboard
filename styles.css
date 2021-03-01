@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(images/bg-header-desktop.png) no-repeat top;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 1em;
+    padding: 10% 20%;
+    
+}
+
+
+/* Header */
+
+header,
+.orange,
+.blue1,
+.ctn {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: hsl(210, 10%, 33%);
+    padding-top: 1.5em;
+}
+
+header h2,
+.orange h2,
+.ctn h2 {
+    font-size: 2rem;
+    color: hsl(210, 10%, 33%);
+    padding-top: 3em;
+}
+
+header p,
+.ctn p {
+    padding: 1em 5em;
+    color: hsl(201, 11%, 66%);
+    line-height: 1.6em;
+    font-size: 1.1rem;
+}
+
+header .p,
+.orange p {
+    padding: 1em 6em;
+    font-size: 1rem;
+    padding-bottom: 4em;
+    color: hsl(201, 11%, 66%);
+}
+
+header button,
+.ctn button {
+    margin: 1.5em 0.4em;
+    border-radius: 4em;
+    border: 1px;
+    box-shadow: 2px 2px 10px rgb(168, 168, 168);
+    padding: 1em 2em;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-g {
+    background-color: hsl(171, 66%, 44%);
+}
+
+.btn-b {
+    background-color: hsl(233, 100%, 69%);
+}
+
+/* end of header */
+
+
+/* features */
+
+.purple {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.comp-image {
+    grid-column: 1/2;
+    position: relative;
+    left: -25vw;
+    width: 185%;
+}
+
+.features {
+    grid-column: 2/3;
+    padding-top: 1em;
+    padding-left: 5em;
+    padding-bottom: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    line-height: 2;
+}
+
+.features h3,
+.blue1 div h3 {
+    font-size: 1.2em;
+    color: hsl(210, 10%, 33%);
+}
+
+.features p,
+.blue1 div p {
+    font-size: 0.9em;
+    color: hsl(201, 11%, 66%);
+}
+
+
+/* end of features */
+
+
+/* components */
+
+.orange,
+.orange p,
+.orange img {
+    padding-top: 2em;
+    line-height: 1.6em;
+}
+
+.blue1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    line-height: 2;
+    align-items: baseline;
+}
+
+
+.blue1 div h3,
+p {
+    padding-top: 1em;
+}
+
+.blue1 div p {
+    font-size: .8rem;
+}
+
+.brands {
+    display: flex;
+    align-items: center;
+    margin: 8em auto 5em;
+    justify-content: space-between;
+}
+
+.brands img {
+    width: 14%;
+}
+
+.ctn p {
+    font-size: 1rem;
+}
+
+footer {
+    background-color: rgb(245, 245, 245);
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-rows: 10em;
+    align-items: center;
+    margin-top: 8em;
+    width: 97vw;
+    margin-left: -16em;
+    margin-bottom: 0%;
+}
+
+.footer-logo {
+    width: 20%;
+    margin-left: 10em;
+}
+
+footer ul {
+    grid-column: 2/3;
+    list-style: none;
+    display: flex;
+}
+
+footer li {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em; 
+}
+
+footer a {
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+}
+
+.firstFooter, .secondFooter, .thirdFooter {
+    margin-right: 5em;
+}
+
+footer div img {
+    grid-column: 3/4;
+    width: 5%;
+    padding-left: 1em;
+    position: relative;
+    left: 8em;
+}
+
+@media (max-width: 500px){
+    body {
+        padding: 10% 15%;
+        text-align: center;  
+    }
+
+    header h2,
+    .orange h2,
+    .ctn h2 {
+    line-height: 1;
+    padding-top: 1.5em;
+}
+
+    header p,
+    .ctn p, header .p,
+    .orange p  {
+    padding: 1em 0.5em;
+    }
+    .purple {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .features {
+        grid-row: 2/3;
+        padding-left: 0em;
+        padding-bottom: 4em;
+    }
+    .orange img {
+        width: 100%;
+    }
+    .blue1 {
+        grid-template-columns: 1fr;
+    }
+    .brands {
+        display: flex;
+        flex-direction: column;
+    }
+    .brands img {
+        width: 50%;
+        margin: 2em auto;
+    }
+    .footer-logo {
+        margin: 0 auto;
+        
+    }
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-gap:2%;
+        width: 100%;
+        margin: 2em auto 0em;
+        
+    }
+    footer ul {
+        grid-column: 1;
+        display:block;
+        align-items: center;
+    }
+
+    footer div img {
+        padding-left: 0em;
+        padding-right: 1em;
+        position: relative;
+        left: 0;
+    }
+    .firstFooter, .secondFooter, .thirdFooter {
+        margin-right: 0em;
+    }
+    header button,
+.ctn button {
+    margin: 0.8rem 0.4em;
+   
+}
+}
